@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+:root {
+  --bg-color: rgb(51, 51, 51);
+  --bg-color-body: rgb(36, 36, 37);
+  --primary-font-color: rgb(255, 255, 255);
+  --input-bg-color: rgb(51, 52, 53);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary-font-color);
+}
+
+html {
+  background-color: rgb(252, 249, 249);
+}
+
+body {
+  max-width: 450px;
+  height: 700px;
+  margin: 10% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color-body);
+  border-radius: 20px;
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.7);
+  box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.7);
+}
+
+.main__container {
+  width: 250px;
+  flex-grow: 1;
+}
+
+/* Header */
+
+h1 {
+  margin: 10% 0 0 0;
+  font-size: 55px;
+}
+
+.title__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invert {
+  margin-top: 10px;
+  width: 70px;
+  height: 70px;
+  filter: invert(100%);
+}
+
+.title {
+  padding-top: 10%;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 13px;
+  text-align: center;
+}
+
+.icon__container {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  width: 100px;
+}
+
+/* Content */
+
+.content__wrapper {
+  margin: 0 10%;
+  text-align: center;
+}
+
+.form__wrapper {
+  margin: 0 10%;
+  text-align: center;
+}
+
+.img__wrapper {
+  margin: 20% 10%;
+  height: 168px;
+}
+
+.portrait {
+  width: 200px;
+  margin-bottom: 250px;
+}
+
+.input__container {
+  height: 50px;
+  padding: 9%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  background-color: var(--input-bg-color);
+}
+
+.input__container i {
+  color: rgb(172, 172, 172);
+}
+
+input {
+  width: 140px;
+  border: none;
+  background-color: var(--input-bg-color);
+  color: rgb(255, 255, 255);
+  outline: none;
+  font-size: 15px;
+}
+
+button {
+  width: 140px;
+  padding: 5%;
+  margin-bottom: 50px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  color: rgb(172, 172, 172);
+  outline: none;
+}
+
+.button--active {
+  background-color: rgb(40, 129, 250);
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button--active:hover {
+  background-color: rgb(64, 139, 243);
+  transition: ease-out 0.2s;
+}

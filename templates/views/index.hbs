@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="icon" href="/img/icon.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <title>Weather</title>
+</head>
+
+<body>
+  <div class="main__container">
+    <div class="title">
+      {{>header}}
+    </div>
+    <div class="icon__container">
+      <img src="/img/animated/cloudy-day-1.svg" alt="app-icon" class="icon">
+      <img src="/img/animated/cloudy.svg" alt="app-icon" class="icon">
+    </div>
+    <div class="form__wrapper">
+      <form>
+        <div class="input__container"><i class="fas fa-search"></i><input placeholder="Location"></div>
+        <button>Search</button>
+      </form>
+
+      <p id="message-1"></p>
+      <p id="message-2"></p>
+    </div>
+  </div>
+  {{>footer}}
+
+  <script src="/js/index.js"></script>
+</body>
+
+</html>
