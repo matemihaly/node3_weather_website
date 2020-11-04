@@ -11,7 +11,7 @@ export const forecast = (lat, long, callback) => {
     } else {
       callback(
         undefined,
-        `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature}°C out. Percipitation is ${body.current.precip}mm. Wind speed is ${body.current.wind_speed}kmph.`
+        `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature}°C out. Percipitation is ${body.current.precip}mm. Humidity is ${body.current.humidity}%. Wind speed is ${body.current.wind_speed}kmph.`
       );
     }
   });
